@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.papeleriatony.papeleriatony.api.model.Producto;
 import com.papeleriatony.papeleriatony.api.service.ProductoService;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/productos")
 public class ProductoController {
 
